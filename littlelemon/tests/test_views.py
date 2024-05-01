@@ -1,14 +1,14 @@
 from django.test import TestCase
-from restaurant.models import MenuItem
+from restaurant.models import Menu
 
 
-class MenuItemsViewTest(TestCase):
+class MenuViewTest(TestCase):
 
     def setup(self):
-        MenuItem.objects.create(id=1, title="IceCream", price=80, inventory=100)
-        MenuItem.objects.create(id=2, title="Coke", price=10, inventory=100)
-        MenuItem.objects.create(id=3, title="Pepsi", price=10, inventory=100)
-        MenuItem.objects.create(id=4, title="Sprite", price=10, inventory=100)
+        Menu.objects.create(id=1, title="IceCream", price=80, inventory=100)
+        Menu.objects.create(id=2, title="Coke", price=10, inventory=100)
+        Menu.objects.create(id=3, title="Pepsi", price=10, inventory=100)
+        Menu.objects.create(id=4, title="Sprite", price=10, inventory=100)
 
     def test_getall(self):
 
